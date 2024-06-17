@@ -9,3 +9,8 @@ export interface CustomButtonProps {
     rightIcon?: string;
     isDisabled?: boolean;
 }
+
+export interface SocialButtonProps {
+    containerStyles?: string;
+    iconStyles?: string;
+}
