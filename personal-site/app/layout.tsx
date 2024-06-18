@@ -26,7 +26,7 @@ export default function RootLayout({
         <Nav/>
         {children}
         <div className='mb-8 xl:mb-0'>
-          <Services />
+          <Services/>
         </div>
         </body>
     </html>
