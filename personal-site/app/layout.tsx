@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nav, Services } from '@/components'
+import { Nav, Services, Work } from '@/components'
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "JoseLikeCode.dev",
+  title: "JoseLikesCode.dev",
 };
 
 export default function RootLayout({
@@ -27,6 +27,9 @@ export default function RootLayout({
         {children}
         <div className='mb-8 xl:mb-0'>
           <Services/>
+        </div>
+        <div className='mb-8 xl:mb-0'>
+          <Work/>
         </div>
         </body>
     </html>
