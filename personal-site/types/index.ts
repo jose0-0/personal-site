@@ -14,3 +14,9 @@ export interface SocialButtonProps {
     containerStyles?: string;
     iconStyles?: string;
 }
+
+export interface WorkSliderBtnProps {
+    containerStyles?: string;
+    btnStyles?: string;
+    iconStyles?: string;
+}
