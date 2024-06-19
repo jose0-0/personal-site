@@ -1,19 +1,24 @@
 'use client'
 import { useState } from 'react'
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt  } from 'react-icons/fa';
 import { FormControl, FormErrorMessage, FormLabel, Input, Textarea} from '@chakra-ui/react'
 
 const info = [
     {
         icon: <FaEnvelope/>,
         title: 'Email',
-        description: 'Email'
+        description: 'jajos780@gmail.com',
     },
     {
         icon: <FaPhoneAlt/>,
         title: 'Phone',
-        description: 'Phone'
+        description: '(702)-123-4567'
     },
+    {
+        icon: <FaMapMarkerAlt/>,
+        title: 'Based In',
+        description: 'Las Vegas, Nevada',
+    }
 ]
 
 
@@ -28,7 +33,6 @@ const initState = {values: initValues}
 
 const Contact = () => {
     const [state, setState] = useState(initState)
-    const [touched, setTouched] = useState({})
 
     const {values} = state
 
@@ -44,7 +48,7 @@ const Contact = () => {
     <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-[30px]'>
             {/* form */}
-            <div className='xl:h-[54%] order-2 xl:order-none'>
+            <div className='xl:w-[54%] order-2 xl:order-none'>
                 <form className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
                     <h3 className='text-4xl text-accent'>Lets Work Together !</h3>
                     <p className='text-white/60'>
@@ -103,14 +107,31 @@ const Contact = () => {
                             name='message'
                             value={values.message}
                             onChange={handleChange}
-                            className='h-[200px] w-full text-black px-1 py-1'
+                            className='flex min-h-[80px] w-full  rounded-md border border-white/10 bg-primary px-4 py-5 text-base placeholder:text-white/60'
                         />
                         <FormErrorMessage className='text-red-400'>Required</FormErrorMessage>
                     </FormControl>
+                    <button className='max-w-40 rounded-md bg-accent text-black '>Send Message</button>
                 </form>
             </div>
             {/* form */}
-            <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>info</div>
+            <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
+                <ul className='flex flex-col gap-10 '>
+                    {info.map((item, index) => {
+                        return (
+                            <li key={index} className='flex items-center gap-6'>
+                                <div className='w-[52px] h-[53px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center'>
+                                    <div className='text-[28px]'>{item.icon}</div>
+                                </div>
+                                <div className='flex-1'>
+                                    <p className='text-white/60'>{item.title}</p>
+                                    <h3 className='text-xl'>{item.description}</h3>
+                                </div>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
         </div>
     </div>
   )
