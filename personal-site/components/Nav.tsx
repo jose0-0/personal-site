@@ -10,14 +10,9 @@ const links = [
     path: '/#services',
   },
   {
-    name: 'Resume',
-    path: '/#resume',
-  },
-  {
     name: 'Projects',
     path: '/#projects',
   },
-
 ]
 
 const Nav = () => {
@@ -49,6 +44,13 @@ const Nav = () => {
                 </Link>
               )
             })}
+            <Link
+              href='/Jose_2024_Resume.pdf'
+              target='_blank'
+              className='hover:text-accent duration-300'
+            >
+              Resume
+            </Link>
             <CustomButton 
               title='Contact Me'
               btnType='button'
@@ -71,6 +73,7 @@ const Nav = () => {
           {links.map(( link, index ) => {
             return (
               <Link 
+                onClick={toggleNav}
                 href={link.path} 
                 key={index}
                 className='p-4 text-4xl hover:text-accent duration-300'
@@ -79,6 +82,14 @@ const Nav = () => {
               </Link>
             )
           })}
+
+          <Link
+            href='/Jose_2024_Resume.pdf'
+            target='_blank'
+            className='p-4 text-4xl hover:text-accent duration-300'
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </header>
