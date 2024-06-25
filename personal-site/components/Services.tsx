@@ -32,7 +32,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='flex flex-col justify-center py-12'>
+    <section id='services' className='flex flex-col justify-center py-12'>
         <div className='container mx-auto'>
             <motion.div 
                 initial={{ opacity: 0 }} 

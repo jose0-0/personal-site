@@ -10,14 +10,9 @@ const links = [
     path: '/#services',
   },
   {
-    name: 'Resume',
-    path: '/#resume',
-  },
-  {
     name: 'Projects',
     path: '/#projects',
   },
-
 ]
 
 const Nav = () => {
@@ -49,6 +44,13 @@ const Nav = () => {
                 </Link>
               )
             })}
+            <Link
+              href='/Jose_2024_Resume.pdf'
+              target='_blank'
+              className='hover:text-accent duration-300'
+            >
+              Resume
+            </Link>
             <CustomButton 
               title='Contact Me'
               btnType='button'
@@ -67,10 +69,12 @@ const Nav = () => {
           mobileNavVisible 
             ? 'xl:hidden absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center w-full h-screen bg-black text-white ease-in duration-300' 
             : 'xl:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex flex-col justify-center items-center w-full h-screen bg-black text-white ease-in duration-300'
-          }>
+          }
+        >
           {links.map(( link, index ) => {
             return (
               <Link 
+                onClick={toggleNav}
                 href={link.path} 
                 key={index}
                 className='p-4 text-4xl hover:text-accent duration-300'
@@ -79,6 +83,14 @@ const Nav = () => {
               </Link>
             )
           })}
+
+          <Link
+            href='/Jose_2024_Resume.pdf'
+            target='_blank'
+            className='p-4 text-4xl hover:text-accent duration-300'
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </header>
