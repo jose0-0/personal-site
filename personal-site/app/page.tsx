@@ -15,7 +15,7 @@ const Home = () => {
               Hello, I'm <br/> <span className='text-accent'>Jose Argueta</span>
             </h1>
             <p className='max-w-[600px] mb-9 text-white/80'>
-              I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
+              I am a software developer with over two years of experience in creating innovative solutions. A fast learner with a passion for continuous improvement, I thrive on new challenges and am eager to expand my skill set.
             </p>
             {/* btn & socials */}
             <div className='flex flex-col items-center gap-8'>
