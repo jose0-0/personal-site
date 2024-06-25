@@ -69,7 +69,8 @@ const Nav = () => {
           mobileNavVisible 
             ? 'xl:hidden absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center w-full h-screen bg-black text-white ease-in duration-300' 
             : 'xl:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex flex-col justify-center items-center w-full h-screen bg-black text-white ease-in duration-300'
-          }>
+          }
+        >
           {links.map(( link, index ) => {
             return (
               <Link 
