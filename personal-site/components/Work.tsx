@@ -17,7 +17,7 @@ const projects = [
         stack: [
             {name: 'HTML 5'}, {name: 'CSS'}, {name: 'Javascript'}
         ],
-        image: '/',
+        image: '/placeholder-1.png',
         live: '',
         github: '',
     },
@@ -29,7 +29,7 @@ const projects = [
         stack: [
             {name: 'React'}, {name: 'CSS'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-2.png',
         live: '',
         github: '',
     },
@@ -41,7 +41,7 @@ const projects = [
         stack: [
             {name: 'Next.Js'}, {name: 'Tailwind'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-3.png',
         live: '',
         github: '',
     },
@@ -53,7 +53,7 @@ const projects = [
         stack: [
             {name: 'React'}, {name: 'CSS'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-4.png',
         live: '',
         github: '',
     }
@@ -76,8 +76,8 @@ const Work = () => {
         animate={{
             opacity: 1,
             transition: { 
-                delay: 2.4, 
-                duration: 0.4, 
+                delay: 0.1, 
+                duration: 0.2, 
                 ease: 'easeIn'
             }
         }} 
