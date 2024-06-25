@@ -21,7 +21,7 @@ const Home = () => {
             <div className='flex flex-col items-center gap-8'>
               <button 
 
-                className='border-[1px] rounded-lg p-2 text-accent border-accent uppercase flex items-center gap-2 hover:bg-accent hover:text-white/90 duration-500'
+                className='border-[1px] rounded-lg p-2 text-accent border-accent-hover uppercase flex items-center gap-2 hover:bg-accent-hover hover:text-black/90 duration-500'
               >
                 <a href='/Jose_2024_Resume.pdf' download='/Jose_2024_Resume.pdf'
                 >
