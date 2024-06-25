@@ -7,25 +7,25 @@ const services = [
     {
         num: '01',
         title: 'Web Development',
-        description: 'lorem ipsum dolor sit amet, consectetur adipis',
+        description: 'Ensuring optimal performance and user experience across all devices.',
         href: ''
     },
     {
         num: '02',
         title: 'UI/UX Design',
-        description: 'lorem ipsum dolor sit amet, consect, lorem ipsum dolor sit amet, consect',
+        description: 'Tailored designs to match your brand identity and business goals.',
         href: ''
     },
     {
         num: '03',
         title: 'Quality Assurance Testing',
-        description: 'lorem ipsum dolor sit amet, consect, lorem ipsum dolor sit amet, consect',
+        description: 'Ensures your software meets the highest standards of functionality, performance, and security.',
         href: ''
     }, 
     {
         num: '04',
         title: 'Search Engine Optimization (SEO)',
-        description: 'lorem ipsum dolor sit amet, consect. lorem ipsum dolor sit amet, consect',
+        description: 'Improving search engine rankings and website loading speed for better user engagement and visibility.',
         href: ''
     },
 ]
