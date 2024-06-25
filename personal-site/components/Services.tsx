@@ -34,6 +34,7 @@ const Services = () => {
   return (
     <section id='services' className='flex flex-col justify-center py-12'>
         <div className='container mx-auto'>
+            <h1 className='text-[4rem]'>Services</h1>
             <motion.div 
                 initial={{ opacity: 0 }} 
                 animate={{ 
