@@ -5,6 +5,7 @@ import Services from './Services';
 import Work from './Work';
 import WorkSliderBtns from './WorkSliderBtns';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export {
     Nav,
@@ -13,5 +14,6 @@ export {
     Services,
     Work,
     WorkSliderBtns,
-    Contact
+    Contact,
+    Footer
 }

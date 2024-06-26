@@ -7,20 +7,27 @@ const Home = () => {
   return (
     <section className='h-full'>
       <div className='container mx-auto h-full'>
-        <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
+        <div className='flex flex-col items-center justify-between xl:pt-8 xl:pb-24'>
           {/* text */}
-          <div className='text-center xl:text-left'>
+          <div className='text-center xl:text-center'>
             <span className='text-xl'>Software Developer </span>
             <h1 className='h1 mb-6'>
               Hello, I'm <br/> <span className='text-accent'>Jose Argueta</span>
             </h1>
-            <p className='max-w-[500px] mb-9 text-white/80'>
-              I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
+            <p className='max-w-[600px] mb-9 text-white/80'>
+              I am a software developer with over two years of experience in creating innovative solutions. A fast learner with a passion for continuous improvement, I thrive on new challenges and am eager to expand my skill set.
             </p>
             {/* btn & socials */}
-            <div className='flex flex-col xl:flex-row items-center gap-8'>
-              <button className='border-[1px] rounded-lg p-2 text-accent/80 border-accent uppercase flex items-center gap-2 hover:bg-accent hover:text-black duration-500'>
-                Download Resume <FiDownload className='text-xl'/>
+            <div className='flex flex-col items-center gap-8'>
+              <button 
+
+                className='border-[1px] rounded-lg p-2 text-accent border-accent-hover uppercase flex items-center gap-2 hover:bg-accent-hover hover:text-black/90 duration-500'
+              >
+                <a href='/Jose_2024_Resume.pdf' download='/Jose_2024_Resume.pdf'
+                >
+                  Download Resume
+                </a> 
+                <FiDownload className='text-xl' />
               </button>
               <div className='mb-8 xl:mb-0'>
                 <Socials 
@@ -29,8 +36,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* photo */}
-          <div>Photo</div>
         </div>
       </div>
     </section>

@@ -7,38 +7,43 @@ const services = [
     {
         num: '01',
         title: 'Web Development',
-        description: 'lorem ipsum dolor sit amet, consectetur adipis',
+        description: 'Ensuring optimal performance and user experience across all devices.',
         href: ''
     },
     {
         num: '02',
         title: 'UI/UX Design',
-        description: 'lorem ipsum dolor sit amet, consect, lorem ipsum dolor sit amet, consect',
+        description: 'Tailored designs to match your brand identity and business goals.',
         href: ''
     },
     {
         num: '03',
         title: 'Quality Assurance Testing',
-        description: 'lorem ipsum dolor sit amet, consect, lorem ipsum dolor sit amet, consect',
+        description: 'Ensures your software meets the highest standards of functionality, performance, and security.',
         href: ''
     }, 
     {
         num: '04',
         title: 'Search Engine Optimization (SEO)',
-        description: 'lorem ipsum dolor sit amet, consect. lorem ipsum dolor sit amet, consect',
+        description: 'Improving search engine rankings and website loading speed for better user engagement and visibility.',
         href: ''
     },
 ]
 
 const Services = () => {
   return (
-    <section className='flex flex-col justify-center py-12'>
+    <section id='services' className='flex flex-col justify-center py-12'>
         <div className='container mx-auto'>
+            <h1 className='text-[4rem]'>Services</h1>
             <motion.div 
                 initial={{ opacity: 0 }} 
                 animate={{ 
                     opacity: 1, 
-                    transition: {delay: 2.4, duration: 0.4, ease: 'easeIn'} 
+                    transition: {
+                        delay: 0.1, 
+                        duration: 0.2, 
+                        ease: 'easeIn'
+                    } 
                 }}
                 className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
             >

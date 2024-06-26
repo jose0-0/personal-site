@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Contact, Nav, Services, Work } from '@/components'
+import { Footer, Contact, Nav, Services, Work } from '@/components'
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -28,11 +28,14 @@ export default function RootLayout({
         <div className='mb-8 xl:mb-0'>
           <Services/>
         </div>
-        {/* <div className='mb-8 xl:mb-0'>
+        <div className='mb-8 xl:mb-0'>
           <Work/>
-        </div> */}
+        </div>
         <div className='mb-8 xl:mb-0'>
           <Contact/>
+        </div>
+        <div className='mb-8 xl:mb-0'>
+          <Footer/>
         </div>
         </body>
     </html>

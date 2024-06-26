@@ -17,7 +17,7 @@ const projects = [
         stack: [
             {name: 'HTML 5'}, {name: 'CSS'}, {name: 'Javascript'}
         ],
-        image: '/',
+        image: '/placeholder-1.png',
         live: '',
         github: '',
     },
@@ -29,7 +29,7 @@ const projects = [
         stack: [
             {name: 'React'}, {name: 'CSS'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-2.png',
         live: '',
         github: '',
     },
@@ -41,7 +41,7 @@ const projects = [
         stack: [
             {name: 'Next.Js'}, {name: 'Tailwind'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-3.png',
         live: '',
         github: '',
     },
@@ -53,7 +53,7 @@ const projects = [
         stack: [
             {name: 'React'}, {name: 'CSS'}, {name: 'Typescript'}
         ],
-        image: '/',
+        image: '/placeholder-4.png',
         live: '',
         github: '',
     }
@@ -71,18 +71,20 @@ const Work = () => {
 
   return (
     <motion.section 
+        id='projects'
         initial={{opacity: 0}} 
         animate={{
             opacity: 1,
             transition: { 
-                delay: 2.4, 
-                duration: 0.4, 
+                delay: 0.1, 
+                duration: 0.2, 
                 ease: 'easeIn'
             }
         }} 
         className='flex flex-col justify-center py-12 xl:px-0'
     >
         <div className='container mx-auto'>
+            <h1 className='text-[4rem]'>Projects</h1>
             <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
                 <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                     <div className='flex flex-col gap-[30px] h-[50%]'>
