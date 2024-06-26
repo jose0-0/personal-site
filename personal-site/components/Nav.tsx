@@ -54,7 +54,7 @@ const Nav = () => {
             <CustomButton 
               title='Contact Me'
               btnType='button'
-              containerStyles='text-black/90 rounded-lg bg-accent-hover min-w-[130px]'
+              containerStyles='text-black/90 rounded-lg bg-accent hover:bg-accent-hover min-w-[130px] duration-300'
             />
           </nav>
         </div>

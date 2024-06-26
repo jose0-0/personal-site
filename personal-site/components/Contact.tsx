@@ -7,13 +7,13 @@ const info = [
     {
         icon: <FaEnvelope/>,
         title: 'Email',
-        description: 'jajos780@gmail.com',
+        description: 'joselikescode@gmail.com',
     },
-    {
-        icon: <FaPhoneAlt/>,
-        title: 'Phone',
-        description: '(702)-123-4567'
-    },
+    // {
+    //     icon: <FaPhoneAlt/>,
+    //     title: 'Phone',
+    //     description: '(702)-123-4567'
+    // },
     {
         icon: <FaMapMarkerAlt/>,
         title: 'Based In',
