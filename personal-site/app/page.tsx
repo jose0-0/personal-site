@@ -41,7 +41,7 @@ const Home = () => {
         <div className='mb-1'>
           <Work/>
         </div>
-        <div className='mb-6'>
+        <div className='mb-[5rem]'>
           <Contact/>
         </div>
       </div>

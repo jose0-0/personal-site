@@ -52,7 +52,7 @@ const Nav = () => {
               Resume
             </Link>
             <Link 
-              href='/contact'
+              href='#contact'
               className='text-black/90 rounded-lg bg-accent hover:bg-accent-hover min-w-[130px] duration-300 text-center p-1.5'
             >
               Contact Me
@@ -93,7 +93,7 @@ const Nav = () => {
             Resume
           </Link>
           <Link 
-            href='/Contact'
+            href='#contact'
             className='p-4 text-4xl hover:text-accent duration-300'
           >
             Contact Me

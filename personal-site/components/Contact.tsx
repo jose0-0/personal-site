@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react'
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt  } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaHeart  } from 'react-icons/fa';
 import { FormControl, FormErrorMessage, FormLabel, Input, Textarea} from '@chakra-ui/react'
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import 'dotenv/config';
 require('dotenv').config();
 
@@ -35,26 +35,18 @@ const initValues = {
 const initState = {values: initValues}
 
 const Contact = () => {
-    // const [state, setState] = useState(initState)
 
-    // const {values} = state
-
-    // const handleChange = ({target}: any) => setState((prev) => ({
-    //     ...prev,
-    //     values: {
-    //         ...prev.values,
-    //         [target.name]: target.value
-    //     }
-    // }))
 
     const [state, handleSubmit] = useForm('mldrrvpd')
 
     if (state.succeeded) {
-        return <p>Thank you! I'll try my best to get back to you soon</p>
+        return <p className='xl:flex items-center gap-2'>Thank you! I'll try my best to get back to you soon! <FaHeart/> </p>
     }
 
   return (
-    <div className='container mx-auto'>
+    <div 
+        id='contact' 
+        className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-[30px]'>
             {/* form */}
             <div className='xl:w-[54%] order-2 xl:order-none'>
@@ -63,7 +55,7 @@ const Contact = () => {
                     className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
                     <h3 className='text-4xl text-accent'>Lets Work Together !</h3>
                     <p className='text-white/60'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugiat pariatur tempora
+                        Have a project in mind or need some advice? Fill out the form below, and let's start the conversation !
                     </p>
                     {/* input */}
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -118,7 +110,7 @@ const Contact = () => {
                         />
                         <FormErrorMessage className='text-red-400'>Required</FormErrorMessage>
                     </FormControl>
-                    <button className='max-w-40 rounded-md bg-accent text-black '>Send Message</button>
+                    <button className='max-w-40 rounded-md bg-accent text-black hover:bg-accent-hover p-1.5'>Send Message</button>
                 </form>
             </div>
             {/* form */}
@@ -145,52 +137,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-// const key = process.env.FORMSPREE_KEY || '';
-
-
-// function Contact() {
-//     const [state, handleSubmit] = useForm('mldrrvpd');
-
-//     if (state.succeeded) {
-//         return <p>Success!</p>;
-//     }
-
-//     return (
-//         <form onSubmit={handleSubmit}>
-//             <label htmlFor="email">
-//                 Email Address
-//             </label>
-//             <input
-//                 required
-//                 className='text-black'
-//                 id="email"
-//                 type="email" 
-//                 name="email"
-//             />
-//             <ValidationError 
-//                 prefix="Email" 
-//                 field="email"
-//                 errors={state.errors}
-//             />
-//             <textarea
-//                 required
-//                 className='text-black/75'
-//                 id="message"
-//                 name="message"
-//             />
-//             <ValidationError 
-//                 prefix="Message" 
-//                 field="message"
-//                 errors={state.errors}
-//             />
-//             <button 
-//                 type="submit" 
-//                 disabled={state.submitting}>
-//                 Submit
-//             </button>
-//         </form>
-//     );
-// }
-
-// export default Contact;
