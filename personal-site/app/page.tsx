@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from 'next/link';
-import { Socials } from "@/components";
+import { Contact, Services, Socials, Work } from "@/components";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
@@ -36,6 +34,15 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='mb-1'>
+          <Services/>
+        </div>
+        <div className='mb-1'>
+          <Work/>
+        </div>
+        <div className='mb-6'>
+          <Contact/>
         </div>
       </div>
     </section>

@@ -25,18 +25,7 @@ export default function RootLayout({
       >
         <Nav/>
         {children}
-        <div className='mb-8 xl:mb-0'>
-          <Services/>
-        </div>
-        <div className='mb-8 xl:mb-0'>
-          <Work/>
-        </div>
-        <div className='mb-8 xl:mb-0'>
-          <Contact/>
-        </div>
-        <div className='mb-8 xl:mb-0'>
-          <Footer/>
-        </div>
+        <Footer/>
         </body>
     </html>
   );
