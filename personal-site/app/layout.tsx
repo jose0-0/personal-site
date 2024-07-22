@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Footer, Nav, Services, Work } from '@/components'
+import { Footer, Contact, Nav, Services, Work } from '@/components'
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,21 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className='!scroll-smooth'>
       <body 
         className={jetbrainsMono.className}
       >
         <Nav/>
         {children}
-        <div className='mb-8 xl:mb-0'>
-          <Services/>
-        </div>
-        <div className='mb-8 xl:mb-0'>
-          <Work/>
-        </div>
-        <div className='mb-8 xl:mb-0'>
-          <Footer/>
-        </div>
+        <Footer/>
         </body>
     </html>
   );
