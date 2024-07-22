@@ -59,6 +59,21 @@
   @apply flex flex-row relative justify-center items-center py-[.5rem] px-[.5rem] outline-none;
 }
 
+/* .skeleton {
+  opacity: 0.7
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-image: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-image: hsl(200, 20%, 95%);
+  }
+} */
+
 /* END: General styles */
 
 /* keyframes */
