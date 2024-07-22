@@ -1,5 +1,4 @@
 'use client'
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
@@ -11,15 +10,15 @@ import { WorkSliderBtns } from '@/components';
 const projects = [
     {
         num: '01', 
-        category: 'frontend',
-        title: 'project 1',
-        description: 'lorem ipsum dolor sit amet, consectetur adipis',
+        category: 'Full-Stack',
+        title: 'Platinum Detailing Lv',
+        description: 'The application features user-friendly service management, detailed service descriptions, a gallery of past work, customer testimonials, and contact information.',
         stack: [
-            {name: 'HTML 5'}, {name: 'CSS'}, {name: 'Javascript'}
+            {name: 'Next.Js'}, {name: 'Tailwind'}, {name: 'Typescript'}
         ],
         image: '/placeholder-1.png',
         live: '',
-        github: '',
+        github: 'https://github.com/jose0-0/PlatinumDetailingLv',
     },
     {
         num: '02', 
@@ -70,19 +69,7 @@ const Work = () => {
     }
 
   return (
-    <motion.section 
-        id='projects'
-        initial={{opacity: 0}} 
-        animate={{
-            opacity: 1,
-            transition: { 
-                delay: 0.1, 
-                duration: 0.2, 
-                ease: 'easeIn'
-            }
-        }} 
-        className='flex flex-col justify-center py-12 xl:px-0'
-    >
+    <section className='flex flex-col justify-center py-12 xl:px-0 intro'>
         <div className='container mx-auto'>
             <h1 className='text-[4rem]'>Projects</h1>
             <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
@@ -133,7 +120,7 @@ const Work = () => {
                                         src={project.image}
                                         fill 
                                         className='object-cover'
-                                        alt=''
+                                        alt={project.title}
                                     />
                                     </div>
                                 </SwiperSlide>
@@ -148,7 +135,7 @@ const Work = () => {
                 </div>
             </div>
         </div>
-    </motion.section>
+    </section>
   )
 }
 

@@ -7,7 +7,7 @@ const Home = () => {
       <div className='container mx-auto h-full'>
         <div className='flex flex-col items-center justify-between xl:pt-8 xl:pb-24'>
           {/* text */}
-          <div className='text-center xl:text-center'>
+          <div className='text-center xl:text-center intro'>
             <span className='text-xl'>Software Developer </span>
             <h1 className='h1 mb-6'>
               Hello, I'm <br/> <span className='text-accent'>Jose Argueta</span>

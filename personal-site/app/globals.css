@@ -59,5 +59,53 @@
   @apply flex flex-row relative justify-center items-center py-[.5rem] px-[.5rem] outline-none;
 }
 
+/* .skeleton {
+  opacity: 0.7
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-image: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-image: hsl(200, 20%, 95%);
+  }
+} */
+
 /* END: General styles */
 
+/* keyframes */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* intro */
+.intro {
+  animation: fade-up 0.5s
+}
+
+.nav-intro {
+  animation: fade-down 0.5s
+}

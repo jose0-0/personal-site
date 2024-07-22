@@ -1,6 +1,5 @@
 'use client'
 import { BsArrowDownRight } from 'react-icons/bs'
-import { motion } from 'framer-motion'
 import Link from 'next/link';
 
 const services = [
@@ -35,18 +34,7 @@ const Services = () => {
     <section id='services' className='flex flex-col justify-center py-12'>
         <div className='container mx-auto'>
             <h1 className='text-[4rem]'>Services</h1>
-            <motion.div 
-                initial={{ opacity: 0 }} 
-                animate={{ 
-                    opacity: 1, 
-                    transition: {
-                        delay: 0.1, 
-                        duration: 0.2, 
-                        ease: 'easeIn'
-                    } 
-                }}
-                className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
-            >
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-[60px] intro'>
                 {services.map((service, index) => {
                     return (
                         <div key={index}
@@ -67,7 +55,7 @@ const Services = () => {
                         </div>
                     );
                 })}
-            </motion.div>
+            </div>
         </div>
     </section>
   )
