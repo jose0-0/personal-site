@@ -113,7 +113,7 @@ const Contact = () => {
                     <button className='max-w-40 rounded-md bg-accent text-black hover:bg-accent-hover p-1.5'>Send Message</button>
                 </form>
             </div>
-            {/* form */}
+            {/* additional info */}
             <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
                 <ul className='flex flex-col gap-10 '>
                     {info.map((item, index) => {
