@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react'
-import { CustomButton } from '@/components';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const links = [
@@ -24,7 +23,7 @@ const Nav = () => {
 
   return (
     <header className='py-8 xl:py-12 text-white'>
-      <div className='container mx-auto flex justify-between items-center'>
+      <div className='container mx-auto flex justify-between items-center nav-intro'>
         <Link href='/' className=''>
           <h1 className='text-4xl font-semibold'>
             JOSE<span className='text-accent'>.</span>

@@ -47,7 +47,7 @@ const Contact = () => {
     <div 
         id='contact' 
         className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row gap-[30px]'>
+        <div className='flex flex-col xl:flex-row gap-[30px] intro'>
             {/* form */}
             <div className='xl:w-[54%] order-2 xl:order-none'>
                 <form 
