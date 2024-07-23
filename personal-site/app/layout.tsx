@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "JoseLikesCode.dev",
+  title: "JoseLikesCode",
 };
 
 export default function RootLayout({
